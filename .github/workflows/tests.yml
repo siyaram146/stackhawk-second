@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Run the Vuln Django Containers
         run: docker-compose up -d
-        run: chmod +x /opt/app/start-server.sh
+             chmod +x /opt/app/start-server.sh
       - name: Run HawkScan
         uses: stackhawk/hawkscan-action@v1.2.1
         with:
