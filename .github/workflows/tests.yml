@@ -32,8 +32,8 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v2
       - name: Run the Vuln Django Containers
-        run: docker-compose up -d
-             chmod +x /opt/app/start-server.sh
+        run: docker-compose up 
+        
       - name: Run HawkScan
         uses: stackhawk/hawkscan-action@v1.2.1
         with:
